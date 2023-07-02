@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"Test worker","id":1}];
+var items = [{"id":1,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[1:8]","start":1688096988395,"end":1688096989986,"title":"meterManagerTest\/meterPost\/meter-post[1:8] 22:49:48.395-22:49:49.986 Succesful creation"},{"id":2,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[2:13]","start":1688096989999,"end":1688096990282,"title":"meterManagerTest\/meterPost\/meter-post[2:13] 22:49:49.999-22:49:50.282 Body null"},{"id":3,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[3:18]","start":1688096990293,"end":1688096990674,"title":"meterManagerTest\/meterPost\/meter-post[3:18] 22:49:50.293-22:49:50.674 Conection type invalid"},{"id":4,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[4:25]","start":1688096990687,"end":1688096990972,"title":"meterManagerTest\/meterPost\/meter-post[4:25] 22:49:50.687-22:49:50.972 Storage system invalid"},{"id":5,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[5:33]","start":1688096990978,"end":1688096991256,"title":"meterManagerTest\/meterPost\/meter-post[5:33] 22:49:50.978-22:49:51.256 Condition invalid"},{"id":6,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[6:40]","start":1688096991264,"end":1688096991531,"title":"meterManagerTest\/meterPost\/meter-post[6:40] 22:49:51.264-22:49:51.531 Owner invalid"},{"id":7,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[7:47]","start":1688096991537,"end":1688096991810,"title":"meterManagerTest\/meterPost\/meter-post[7:47] 22:49:51.537-22:49:51.810 i_max invalid data type"},{"id":8,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[8:54]","start":1688096991816,"end":1688096992089,"title":"meterManagerTest\/meterPost\/meter-post[8:54] 22:49:51.816-22:49:52.089 i_b invalid data type"},{"id":9,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[9:61]","start":1688096992095,"end":1688096992372,"title":"meterManagerTest\/meterPost\/meter-post[9:61] 22:49:52.095-22:49:52.372 i_n invalid data type"},{"id":10,"group":1,"content":"meterManagerTest\/meterPost\/meter-post[10:68]","start":1688096992377,"end":1688096992659,"title":"meterManagerTest\/meterPost\/meter-post[10:68] 22:49:52.377-22:49:52.659 Seals invalid data type"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

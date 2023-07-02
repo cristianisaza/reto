@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.meterManagerTest.meter-post.meter-post</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-28 10:31:21 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[6:32]"><span>[6:32]</span> <span>Owner invalid</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/meterManagerTest/meter-post/meter-post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">post the meter information in the meter manager</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:32]</span>
+                <span class="scenario-name">Owner invalid</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2206</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://ops.enerbit.dev/learning/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">85</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;api/v1/meters/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request {&quot;serial&quot;: &quot;3424234233kj&quot;,&quot;connection_type&quot;: &quot;directa&quot;,&quot;storage_system&quot;: &quot;interno&quot;,&quot;condition&quot;:&quot;nuevo&quot;,&quot;owner&quot;: &quot;invalid data&quot;,&quot;location&quot;: &quot;Almacen &quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;: &quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;: 6345.654,&quot;i_b&quot;: 21.5,&quot;i_n&quot;: 876.5,&quot;seals&quot;: 545.65}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">42</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2079</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">22:31:21.296 request:
+1 &gt; POST https://ops.enerbit.dev/learning/api/v1/meters
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 261
+1 &gt; Host: ops.enerbit.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;serial&quot;:&quot;3424234233kj&quot;,&quot;connection_type&quot;:&quot;directa&quot;,&quot;storage_system&quot;:&quot;interno&quot;,&quot;condition&quot;:&quot;nuevo&quot;,&quot;owner&quot;:&quot;invalid data&quot;,&quot;location&quot;:&quot;Almacen &quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;:&quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;:6345.654,&quot;i_b&quot;:21.5,&quot;i_n&quot;:876.5,&quot;seals&quot;:545.65}
+
+22:31:21.892 response time in milliseconds: 593
+1 &lt; 422
+1 &lt; Date: Thu, 29 Jun 2023 03:31:21 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 167
+1 &lt; Connection: keep-alive
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+1 &lt; Access-Control-Max-Age: 1728000
+{&quot;detail&quot;:[{&quot;loc&quot;:[&quot;body&quot;,&quot;owner&quot;],&quot;msg&quot;:&quot;value is not a valid enumeration member; permitted: &#39;RF&#39;, &#39;OR&#39;&quot;,&quot;type&quot;:&quot;type_error.enum&quot;,&quot;ctx&quot;:{&quot;enum_values&quot;:[&quot;RF&quot;,&quot;OR&quot;]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

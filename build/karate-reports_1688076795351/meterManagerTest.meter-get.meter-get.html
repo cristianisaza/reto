@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>meterManagerTest.meter-get.meter-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-29 04:14:54 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Succesful consult</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:10]"><span>[2:10]</span> <span>Nonexistent Id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:16]"><span>[3:16]</span> <span>Nonexistent Id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">meterManagerTest/meter-get/meter-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get the register of meter information</span>
+          <span class="feature-description">recorded in the meter manager</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Succesful consult</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>858</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://ops.enerbit.dev/learning/&quot; + &quot;api/v1/meters/&quot; + &quot;4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">856</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">16:14:50.271 request:
+1 &gt; GET https://ops.enerbit.dev/learning/api/v1/meters/4
+1 &gt; Host: ops.enerbit.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:14:51.116 response time in milliseconds: 844
+1 &lt; 200
+1 &lt; Date: Thu, 29 Jun 2023 21:14:51 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 323
+1 &lt; Connection: keep-alive
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+1 &lt; Access-Control-Max-Age: 1728000
+{&quot;serial&quot;:&quot;3424234233&quot;,&quot;connection_type&quot;:&quot;directa&quot;,&quot;storage_system&quot;:&quot;interno&quot;,&quot;condition&quot;:&quot;nuevo&quot;,&quot;owner&quot;:&quot;RF&quot;,&quot;location&quot;:&quot;Almacen palmira&quot;,&quot;manufacturer&quot;:&quot;yes&quot;,&quot;purchase&quot;:&quot;2022-07-28 03:08:49.340514&quot;,&quot;i_max&quot;:6345.654,&quot;i_b&quot;:21.5,&quot;i_n&quot;:876.5,&quot;seals&quot;:545.65,&quot;id&quot;:4,&quot;created_at&quot;:&quot;2023-06-27T16:02:47.980154&quot;,&quot;updated_at&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:10]</span>
+                <span class="scenario-name">Nonexistent Id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>330</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://ops.enerbit.dev/learning/&quot; + &quot;api/v1/meters/&quot; + &quot;-4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">325</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:14:51.098 request:
+1 &gt; GET https://ops.enerbit.dev/learning/api/v1/meters/-4
+1 &gt; Host: ops.enerbit.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:14:51.418 response time in milliseconds: 320
+1 &lt; 404
+1 &lt; Date: Thu, 29 Jun 2023 21:14:51 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 28
+1 &lt; Connection: keep-alive
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+1 &lt; Access-Control-Max-Age: 1728000
+{&quot;detail&quot;:&quot;meter not found&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.detail == &#39;meter not found&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:16]</span>
+                <span class="scenario-name">Nonexistent Id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>341</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://ops.enerbit.dev/learning/&quot; + &quot;api/v1/meters/&quot; + &quot;tx&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">339</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">16:14:51.137 request:
+1 &gt; GET https://ops.enerbit.dev/learning/api/v1/meters/tx
+1 &gt; Host: ops.enerbit.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:14:51.471 response time in milliseconds: 333
+1 &lt; 422
+1 &lt; Date: Thu, 29 Jun 2023 21:14:51 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 99
+1 &lt; Connection: keep-alive
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+1 &lt; Access-Control-Max-Age: 1728000
+{&quot;detail&quot;:[{&quot;loc&quot;:[&quot;path&quot;,&quot;id&quot;],&quot;msg&quot;:&quot;value is not a valid integer&quot;,&quot;type&quot;:&quot;type_error.integer&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
