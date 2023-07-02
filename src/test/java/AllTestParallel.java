@@ -7,6 +7,6 @@ public class AllTestParallel {
     void testParallel(){
 
         Runner.path("classpath:meterManagerTest").tags("~@ignore").
-                parallel(2);
+                parallel(1);
     }
 }
