@@ -15,6 +15,13 @@ Feature: post the meter information in the meter manager
     When method patch
     Then status 404
 
+  Scenario: Invalid Id
+    Given url "https://ops.enerbit.dev/learning/"
+    And path "api/v1/meters/test"
+    Given request {"serial": "3424234233kj","connection_type": "direct","storage_system": "interno","condition": "nuevo","owner": "RF","location": "55865","manufacturer": "yes","purchase": "2022-07-28 03:08:49.340514","i_max": 6345.654,"i_b": 21.5,"i_n": 876.5,"seals": 545.65}
+    When method patch
+    Then status 404
+
   Scenario: Succesful update
     Given request {"serial": "3424234233kj","connection_type": "directa","storage_system": "interno","condition":"nuevo","owner": "RF","location": "Almacen ","manufacturer":"yes","purchase": "2022-07-28 03:08:49.340514","i_max": 6345.654,"i_b": 21.5,"i_n": 876.5,"seals": 545.65}
     When method patch
@@ -24,8 +31,9 @@ Feature: post the meter information in the meter manager
     Given request {}
     When method patch
     Then status 200
-  #En este escenario se recomienda hacer un control de este tipo de solicitud, a no ser que se tengan razones por las cuales deba ser asi y no se
-  # tenga conocimiento al momento de solucionar este reto
+  #En este escenario se recomienda hacer un control de este tipo de solicitud, ya que el statuscode corresponde a una solicitud exitosa
+  # y de hecho no se modifica el registro. A no ser que se tengan razones por las cuales deba ser asi y no se
+  # tenga conocimiento al momento de solucionar este reto.
 
 
 
